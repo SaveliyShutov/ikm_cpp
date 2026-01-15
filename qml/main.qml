@@ -9,6 +9,18 @@ ApplicationWindow {
     height: 700
     title: "Habit Tracker — Qt Quick + Postgres"
 
+    property Component errorTextFieldStyle: Component {
+      TextField {
+        background: Rectangle {
+          implicitWidth: 200
+          implicitHeight: 40
+          border.color: parent.acceptableInput ? "lightgray" : "red"
+          border.width: 2
+          radius: 5
+        }
+      }
+    }
+
     Dialog {
         id: errorDialog
         title: "Ошибка"
@@ -234,12 +246,33 @@ ApplicationWindow {
                                 width: parent.width
                                 placeholderText: "Name"
                                 text: userForm.userName
+                                validator: RegularExpressionValidator {
+                                  regularExpression: /.+/
+                                }
+                                onTextChanged: {
+                                  if (text.trim().length === 0) {
+                                      nameField.background.border.color = "red"
+                                  } else {
+                                      nameField.background.border.color = "lightgray"
+                                  }
+                              }
                             }
                             TextField { 
                                 id: emailField
                                 width: parent.width
                                 placeholderText: "Email"
                                 text: userForm.userEmail
+                                validator: RegularExpressionValidator {
+                                  regularExpression: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+                                }
+                                
+                                onTextChanged: {
+                                  if (!validator.regularExpression.test(text)) {
+                                      emailField.background.border.color = "red"
+                                  } else {
+                                      emailField.background.border.color = "lightgray"
+                                  }
+                                }
                             }
                             ComboBox { 
                                 id: roleField
@@ -257,6 +290,26 @@ ApplicationWindow {
                         }
                         
                         onAccepted: {
+                            var errors = []
+
+                            if (nameField.text.trim().length === 0) {
+                                errors.push("Имя не может быть пустым")
+                                nameField.background.border.color = "red"
+                            }
+                            
+                            if (emailField.text.trim().length === 0) {
+                                errors.push("Email не может быть пустым")
+                                emailField.background.border.color = "red"
+                            } else if (!emailField.validator.regularExpression.test(emailField.text)) {
+                                errors.push("Некорректный формат email")
+                                emailField.background.border.color = "red"
+                            }
+                            
+                            if (errors.length > 0) {
+                                showError("Ошибки валидации:\n" + errors.join("\n"))
+                                userDialog.open()
+                                return
+                            }
                             var payload = {
                                 user_id: idField.text,
                                 name: nameField.text,
@@ -450,18 +503,53 @@ ApplicationWindow {
                                 width: parent.width
                                 placeholderText: "Name"
                                 text: habitForm.name
+                                  validator: RegularExpressionValidator {
+                                  regularExpression: /.+/
+                                }
+                                
+                                onTextChanged: {
+                                  if (text.trim().length === 0) {
+                                      hname.background.border.color = "red"
+                                  } else {
+                                      hname.background.border.color = "lightgray"
+                                    }
+                                }
                             }
                             TextField { 
                                 id: hcat
                                 width: parent.width
                                 placeholderText: "Category"
                                 text: habitForm.category
+                                validator: RegularExpressionValidator {
+                                  regularExpression: /.+/
+                                }
+                                
+                                onTextChanged: {
+                                  if (text.trim().length === 0) {
+                                    hcat.background.border.color = "red"
+                                  } else {
+                                    hcat.background.border.color = "lightgray"
+                                  }
+                                }
                             }
                             TextField { 
                                 id: hfreq
                                 width: parent.width
                                 placeholderText: "Frequency"
                                 text: habitForm.frequency
+                                validator: IntValidator {
+                                    bottom: 1
+                                    top: 100
+                                }
+                                
+                                onTextChanged: {
+                                    var num = parseInt(text)
+                                    if (isNaN(num) || num < 1 || num > 100) {
+                                        hfreq.background.border.color = "red"
+                                    } else {
+                                        hfreq.background.border.color = "lightgray"
+                                    }
+                                }
                             }
                             TextArea { 
                                 id: hdesc
@@ -481,6 +569,34 @@ ApplicationWindow {
                         }
                         
                         onAccepted: {
+                            var errors = []
+                            
+                            if (hname.text.trim().length === 0) {
+                                errors.push("Название привычки не может быть пустым")
+                                hname.background.border.color = "red"
+                            }
+                            
+                            if (hcat.text.trim().length === 0) {
+                                errors.push("Категория не может быть пустой")
+                                hcat.background.border.color = "red"
+                            }
+                            
+                            if (hfreq.text.trim().length === 0) {
+                                errors.push("Частота не может быть пустой")
+                                hfreq.background.border.color = "red"
+                            } else {
+                                var freqNum = parseInt(hfreq.text.trim())
+                                if (isNaN(freqNum) || freqNum < 1 || freqNum > 100) {
+                                    errors.push("Частота должна быть числом от 1 до 100")
+                                    hfreq.background.border.color = "red"
+                                }
+                            }
+                            
+                            if (errors.length > 0) {
+                                showError("Ошибки валидации:\n" + errors.join("\n"))
+                                habitDialog.open()
+                                return
+                            }
                             var payload = {
                                 habit_id: hid.text,
                                 name: hname.text,
