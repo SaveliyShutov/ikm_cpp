@@ -1,0 +1,14 @@
+/home/saveliy/ikm_cpp/build/CMakeFiles/habit-tracker.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/habit-tracker_automoc_json_extraction.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/habit-tracker_qmltyperegistration.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/all_qmltyperegistrations.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/habit-tracker_other_files.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/habit-tracker_qmllint.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/habit-tracker_qmllint_json.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/all_qmllint.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/all_qmllint_json.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/habit-tracker_tooling.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/edit_cache.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/rebuild_cache.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/habit-tracker_autogen_timestamp_deps.dir
+/home/saveliy/ikm_cpp/build/CMakeFiles/habit-tracker_autogen.dir

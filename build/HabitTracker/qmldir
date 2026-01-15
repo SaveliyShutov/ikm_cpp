@@ -1,0 +1,4 @@
+module HabitTracker
+typeinfo habit-tracker.qmltypes
+prefer :/HabitTracker/
+

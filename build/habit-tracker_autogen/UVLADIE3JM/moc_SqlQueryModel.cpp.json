@@ -1,0 +1,30 @@
+{
+    "classes": [
+        {
+            "className": "SqlQueryModel",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "query",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "refresh",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "SqlQueryModel",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QSqlQueryModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "SqlQueryModel.h",
+    "outputRevision": 68
+}

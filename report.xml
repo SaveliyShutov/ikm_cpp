@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Habit Tracker" version="1.0">
+    <metadata>
+        <title>Habit Tracker Application</title>
+        <description>
+            Приложение для отслеживания привычек на основе Qt Quick и PostgreSQL.
+            Позволяет управлять пользователями, привычками и журналом выполнения.
+        </description>
+        <technology-stack>
+            <technology>Qt 6.2</technology>
+            <technology>Qt Quick Controls 6.2</technology>
+            <technology>QML (Qt Modeling Language)</technology>
+            <technology>C++ 17</technology>
+            <technology>PostgreSQL 14+</technology>
+            <technology>CMake 3.16+</technology>
+        </technology-stack>
+        <authors>
+            <author>IKM_CPP Development Team</author>
+        </authors>
+        <created-date>2024</created-date>
+    </metadata>
+
+    <directory-structure>
+        <root-directory name="IKM_CPP">
+            <directory name="build" type="build-output">
+                <description>Директория сборки проекта</description>
+            </directory>
+            
+            <directory name="qml" path="~/ikm_cpp/build/qml">
+                <description>Скомпилированные QML ресурсы</description>
+            </directory>
+            
+            <file name="main.qml" type="ui">
+                <description>
+                    Главный QML файл интерфейса. Содержит три вкладки:
+                    - Users (Пользователи)
+                    - Habits (Привычки) 
+                    - Logs (Журнал выполнения)
+                </description>
+                <components>
+                    <component name="ApplicationWindow">
+                        <property name="width" value="1000" />
+                        <property name="height" value="700" />
+                        <property name="title" value="Habit Tracker — Qt Quick + Postgres" />
+                    </component>
+                    <component name="TabBar">
+                        <tab name="Users" />
+                        <tab name="Habits" />
+                        <tab name="Logs" />
+                    </component>
+                </components>
+            </file>
+            
+            <directory name="sql">
+                <file name="init_postgres.sql" type="database">
+                    <description>
+                        SQL скрипт инициализации базы данных.
+                        Создает таблицы: users, habits, habit_log.
+                        Определяет структуру базы данных и начальные данные.
+                    </description>
+                    <tables>
+                        <table name="users">
+                            <columns>
+                                <column name="user_id" type="UUID" primary="true" />
+                                <column name="name" type="VARCHAR(100)" />
+                                <column name="email" type="VARCHAR(100)" unique="true" />
+                                <column name="registration_date" type="DATE" />
+                                <column name="role" type="VARCHAR(20)" default="user" />
+                            </columns>
+                        </table>
+                        <table name="habits">
+                            <columns>
+                                <column name="habit_id" type="UUID" primary="true" />
+                                <column name="name" type="VARCHAR(100)" />
+                                <column name="description" type="TEXT" />
+                                <column name="category" type="VARCHAR(50)" />
+                                <column name="frequency" type="VARCHAR(50)" />
+                            </columns>
+                        </table>
+                        <table name="habit_log">
+                            <columns>
+                                <column name="user_id" type="UUID" foreign="users(user_id)" />
+                                <column name="habit_id" type="UUID" foreign="habits(habit_id)" />
+                                <column name="log_date" type="DATE" />
+                                <column name="is_completed" type="BOOLEAN" default="false" />
+                                <column name="completion_time" type="TIME" />
+                                <column name="notes" type="TEXT" />
+                            </columns>
+                            <primary-key>
+                                <column>user_id</column>
+                                <column>habit_id</column>
+                                <column>log_date</column>
+                            </primary-key>
+                        </table>
+                    </tables>
+                </file>
+            </directory>
+            
+            <directory name="src" type="source-code">
+                <description>Исходный код C++ приложения</description>
+                
+                <file name="main.cpp" type="application-entry">
+                    <description>
+                        Точка входа в приложение. Инициализирует QApplication,
+                        регистрирует QML типы, запускает движок QML.
+                    </description>
+                    <functions>
+                        <function name="main" return="int">
+                            <parameters>
+                                <parameter name="argc" type="int" />
+                                <parameter name="argv" type="char**" />
+                            </parameters>
+                        </function>
+                    </functions>
+                </file>
+                
+                <file name="DatabaseManager.cpp/.h" type="database-layer">
+                    <description>
+                        Менеджер подключения к базе данных PostgreSQL.
+                        Реализует паттерн Singleton для единого подключения.
+                    </description>
+                    <class name="DatabaseManager">
+                        <methods>
+                            <method name="instance" static="true" return="DatabaseManager&amp;" />
+                            <method name="database" return="QSqlDatabase" />
+                            <method name="connect" return="bool" />
+                            <method name="close" return="void" />
+                        </methods>
+                    </class>
+                </file>
+                
+                <file name="SqlQueryModel.cpp/.h" type="data-model">
+                    <description>
+                        Наследник QSqlQueryModel с расширенной функциональностью.
+                        Обеспечивает обновление данных и работу с ролями QML.
+                    </description>
+                    <class name="SqlQueryModel" inherits="QSqlQueryModel">
+                        <methods>
+                            <method name="refresh" parameters="const QString &amp;query" return="void" />
+                            <method name="roleNames" return="QHash&lt;int, QByteArray&gt;" override="true" />
+                        </methods>
+                    </class>
+                </file>
+                
+                <file name="UsersModel.cpp/.h" type="business-logic">
+                    <description>
+                        Модель для работы с пользователями.
+                        Обеспечивает CRUD операции и взаимодействие с QML.
+                    </description>
+                    <class name="UsersModel" inherits="QObject">
+                        <properties>
+                            <property name="lastError" type="QString" notify="true" />
+                        </properties>
+                        <methods>
+                            <method name="refresh" return="void" qml-invokable="true" />
+                            <method name="getModel" return="QVariant" qml-invokable="true" />
+                            <method name="addUser" parameters="const QVariantMap &amp;data" return="bool" qml-invokable="true" />
+                            <method name="editUser" parameters="const QString &amp;id, const QVariantMap &amp;data" return="bool" qml-invokable="true" />
+                            <method name="deleteUser" parameters="const QString &amp;id" return="bool" qml-invokable="true" />
+                        </methods>
+                    </class>
+                </file>
+                
+                <file name="HabitsModel.cpp/.h" type="business-logic">
+                    <description>
+                        Модель для работы с привычками.
+                        Управляет созданием, редактированием и удалением привычек.
+                    </description>
+                    <class name="HabitsModel" inherits="QObject">
+                        <properties>
+                            <property name="lastError" type="QString" notify="true" />
+                        </properties>
+                        <methods>
+                            <method name="refresh" return="void" qml-invokable="true" />
+                            <method name="getModel" return="QVariant" qml-invokable="true" />
+                            <method name="addHabit" parameters="const QVariantMap &amp;data" return="bool" qml-invokable="true" />
+                            <method name="editHabit" parameters="const QString &amp;id, const QVariantMap &amp;data" return="bool" qml-invokable="true" />
+                            <method name="deleteHabit" parameters="const QString &amp;id" return="bool" qml-invokable="true" />
+                        </methods>
+                    </class>
+                </file>
+                
+                <file name="LogsModel.cpp/.h" type="business-logic">
+                    <description>
+                        Модель для работы с журналом выполнения привычек.
+                        Отслеживает выполнение привычек пользователями.
+                    </description>
+                    <class name="LogsModel" inherits="QObject">
+                        <properties>
+                            <property name="lastError" type="QString" notify="true" />
+                        </properties>
+                        <methods>
+                            <method name="refresh" return="void" qml-invokable="true" />
+                            <method name="getModel" return="QVariant" qml-invokable="true" />
+                            <method name="addLog" parameters="const QVariantMap &amp;data" return="bool" qml-invokable="true" />
+                            <method name="editLog" parameters="const QString &amp;userId, const QString &amp;habitId, const QString &amp;logDate, const QVariantMap &amp;data" return="bool" qml-invokable="true" />
+                            <method name="deleteLog" parameters="const QString &amp;userId, const QString &amp;habitId, const QString &amp;logDate" return="bool" qml-invokable="true" />
+                        </methods>
+                    </class>
+                </file>
+                
+                <file name="CMakeLists.txt" type="build-configuration">
+                    <description>
+                        Конфигурационный файл сборки CMake.
+                        Определяет зависимости, цели сборки и настройки компиляции.
+                    </description>
+                    <requirements>
+                        <requirement>Qt 6.2 Core</requirement>
+                        <requirement>Qt 6.2 Quick</requirement>
+                        <requirement>Qt 6.2 QuickControls2</requirement>
+                        <requirement>Qt 6.2 Sql</requirement>
+                        <requirement>PostgreSQL Client</requirement>
+                    </requirements>
+                </file>
+                
+                <file name="README.md" type="documentation">
+                    <description>
+                        Файл README с инструкциями по сборке, настройке и использованию.
+                    </description>
+                    <sections>
+                        <section name="Требования" />
+                        <section name="Установка" />
+                        <section name="Настройка БД" />
+                        <section name="Сборка" />
+                        <section name="Использование" />
+                    </sections>
+                </file>
+            </directory>
+        </root-directory>
+    </directory-structure>
+
+    <architecture>
+        <layer name="Presentation Layer">
+            <component name="QML Interface">
+                <description>Визуальный интерфейс на QML с вкладками</description>
+                <responsibility>Отображение данных и обработка пользовательского ввода</responsibility>
+            </component>
+        </layer>
+        
+        <layer name="Business Logic Layer">
+            <component name="Models (Users/Habits/Logs)">
+                <description>C++ модели с QML инвакабельными методами</description>
+                <responsibility>Обработка бизнес-логики и CRUD операции</responsibility>
+            </component>
+        </layer>
+        
+        <layer name="Data Access Layer">
+            <component name="SqlQueryModel">
+                <description>Адаптер для работы с SQL запросами</description>
+                <responsibility>Преобразование данных БД в QAbstractItemModel</responsibility>
+            </component>
+            <component name="DatabaseManager">
+                <description>Менеджер подключения к БД</description>
+                <responsibility>Управление подключением к PostgreSQL</responsibility>
+            </component>
+        </layer>
+        
+        <layer name="Database Layer">
+            <component name="PostgreSQL Database">
+                <description>База данных PostgreSQL</description>
+                <responsibility>Хранение данных приложения</responsibility>
+            </component>
+        </layer>
+    </architecture>
+
+    <workflow>
+        <flow name="Пользовательский интерфейс">
+            <step number="1">Пользователь взаимодействует с QML интерфейсом</step>
+            <step number="2">QML вызывает инвакабельные методы C++ моделей</step>
+            <step number="3">Модели выполняют SQL запросы через DatabaseManager</step>
+            <step number="4">Данные возвращаются в QML через модели</step>
+            <step number="5">QML обновляет интерфейс</step>
+        </flow>
+        
+        <flow name="Обработка ошибок">
+            <step number="1">При ошибке в C++ модели устанавливается lastError</step>
+            <step number="2">Сигнал lastErrorChanged передается в QML</step>
+            <step number="3">QML отображает диалог с ошибкой</step>
+        </flow>
+    </workflow>
+
+    <dependencies>
+        <external>
+            <dependency name="Qt6" version="6.2.0+" />
+            <dependency name="PostgreSQL" version="14.0+" />
+            <dependency name="CMake" version="3.16+" />
+        </external>
+        
+        <internal>
+            <dependency from="main.qml" to="UsersModel" type="qml-connection" />
+            <dependency from="main.qml" to="HabitsModel" type="qml-connection" />
+            <dependency from="main.qml" to="LogsModel" type="qml-connection" />
+            <dependency from="All Models" to="DatabaseManager" type="database-connection" />
+            <dependency from="All Models" to="SqlQueryModel" type="inheritance" />
+        </internal>
+    </dependencies>
+
+    <features>
+        <feature name="Управление пользователями">
+            <description>CRUD операции для пользователей системы</description>
+            <capabilities>
+                <capability>Добавление новых пользователей</capability>
+                <capability>Редактирование существующих</capability>
+                <capability>Удаление пользователей</capability>
+                <capability>Просмотр списка пользователей</capability>
+            </capabilities>
+        </feature>
+        
+        <feature name="Управление привычками">
+            <description>Создание и настройка привычек для отслеживания</description>
+            <capabilities>
+                <capability>Определение привычек с категориями и частотой</capability>
+                <capability>Настройка описания привычек</capability>
+                <capability>Управление списком привычек</capability>
+            </capabilities>
+        </feature>
+        
+        <feature name="Журнал выполнения">
+            <description>Отслеживание выполнения привычек пользователями</description>
+            <capabilities>
+                <capability>Логирование выполнения привычек</capability>
+                <capability>Отметка о выполнении/невыполнении</capability>
+                <capability>Добавление заметок к выполнению</capability>
+                <capability>Просмотр истории выполнения</capability>
+            </capabilities>
+        </feature>
+        
+        <feature name="Обработка ошибок">
+            <description>Единая система обработки и отображения ошибок</description>
+            <capabilities>
+                <capability>Централизованный диалог ошибок</capability>
+                <capability>Перехват ошибок из всех моделей</capability>
+                <capability>Прокручиваемое поле для длинных сообщений</capability>
+            </capabilities>
+        </feature>
+    </features>
+
+    <database-schema>
+        <tables>
+            <table name="users">
+                <description>Таблица пользователей системы</description>
+                <columns>
+                    <column name="user_id" type="UUID" constraints="PRIMARY KEY" />
+                    <column name="name" type="VARCHAR(100)" constraints="NOT NULL" />
+                    <column name="email" type="VARCHAR(100)" constraints="UNIQUE, NOT NULL" />
+                    <column name="registration_date" type="DATE" constraints="NOT NULL" />
+                    <column name="role" type="VARCHAR(20)" constraints="DEFAULT 'user'" />
+                    <column name="created_at" type="TIMESTAMP" constraints="DEFAULT CURRENT_TIMESTAMP" />
+                </columns>
+            </table>
+            
+            <table name="habits">
+                <description>Таблица определений привычек</description>
+                <columns>
+                    <column name="habit_id" type="UUID" constraints="PRIMARY KEY" />
+                    <column name="name" type="VARCHAR(100)" constraints="NOT NULL" />
+                    <column name="description" type="TEXT" />
+                    <column name="category" type="VARCHAR(50)" />
+                    <column name="frequency" type="VARCHAR(50)" />
+                    <column name="reminder_time" type="TIME" />
+                    <column name="created_at" type="TIMESTAMP" constraints="DEFAULT CURRENT_TIMESTAMP" />
+                </columns>
+            </table>
+            
+            <table name="habit_log">
+                <description>Таблица журнала выполнения привычек</description>
+                <columns>
+                    <column name="user_id" type="UUID" constraints="NOT NULL, FOREIGN KEY REFERENCES users(user_id)" />
+                    <column name="habit_id" type="UUID" constraints="NOT NULL, FOREIGN KEY REFERENCES habits(habit_id)" />
+                    <column name="log_date" type="DATE" constraints="NOT NULL" />
+                    <column name="is_completed" type="BOOLEAN" constraints="DEFAULT false" />
+                    <column name="completion_time" type="TIME" />
+                    <column name="notes" type="TEXT" />
+                    <column name="created_at" type="TIMESTAMP" constraints="DEFAULT CURRENT_TIMESTAMP" />
+                </columns>
+                <primary-key>user_id, habit_id, log_date</primary-key>
+                <indexes>
+                    <index name="idx_habit_log_user" columns="user_id" />
+                    <index name="idx_habit_log_habit" columns="habit_id" />
+                    <index name="idx_habit_log_date" columns="log_date" />
+                </indexes>
+            </table>
+        </tables>
+        
+        <relationships>
+            <relationship from="habit_log" to="users" type="many-to-one" />
+            <relationship from="habit_log" to="habits" type="many-to-one" />
+        </relationships>
+    </database-schema>
+
+    <build-instructions>
+        <step number="1">Установить зависимости: Qt6, PostgreSQL, CMake</step>
+        <step number="2">Создать базу данных PostgreSQL</step>
+        <step number="3">Выполнить init_postgres.sql для инициализации схемы</step>
+        <step number="4">Настроить подключение к БД в DatabaseManager</step>
+        <step number="5">Создать директорию build и перейти в неё</step>
+        <step number="6">Выполнить cmake ..</step>
+        <step number="7">Выполнить make (или cmake --build .)</step>
+        <step number="8">Запустить скомпилированное приложение</step>
+    </build-instructions>
+
+    <notes>
+        <note type="security">
+            <content>Приложение использует прямое подключение к БД. В production следует добавить шифрование соединения.</content>
+        </note>
+        <note type="performance">
+            <content>Для больших объемов данных рекомендуется добавить пагинацию в QML списках.</content>
+        </note>
+        <note type="scalability">
+            <content>Архитектура позволяет легко добавлять новые модели и QML компоненты.</content>
+        </note>
+        <note type="testing">
+            <content>Для тестирования рекомендуется создать тестовую БД и использовать QTest.</content>
+        </note>
+    </notes>
+
+    <revision-history>
+        <revision version="1.0" date="2024">
+            <change>Первоначальная версия приложения</change>
+            <change>Базовая функциональность CRUD для всех сущностей</change>
+            <change>QML интерфейс с тремя вкладками</change>
+            <change>Интеграция с PostgreSQL</change>
+        </revision>
+    </revision-history>
+</project>

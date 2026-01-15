@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/HabitTracker">
+    <file alias="qmldir">/home/saveliy/ikm_cpp/build/HabitTracker/qmldir</file>
+  </qresource>
+</RCC>
+
