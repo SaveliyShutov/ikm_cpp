@@ -311,6 +311,26 @@ CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QHash \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
+ /home/saveliy/ikm_cpp/src/HabitRepository.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlquery.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlError \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlerror.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlRecord \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlrecord.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariantMap \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantmap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
+ /home/saveliy/ikm_cpp/src/HabitEntity.h \
  /home/saveliy/ikm_cpp/src/DatabaseManager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/QtSql \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/QtSqlDepends \
@@ -485,11 +505,9 @@ CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversionnumber.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlockfile.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qloggingcategory.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmessageauthenticationcode.h \
@@ -655,7 +673,6 @@ CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstack.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstandardpaths.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstorageinfo.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringbuilder.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h \
@@ -689,16 +706,11 @@ CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurlquery.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantanimation.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarianthash.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QHash \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversionnumber.h \
@@ -711,15 +723,11 @@ CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23functional.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreversion.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
- /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldriver.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldriverplugin.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfactoryinterface.h \
- /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlerror.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlfield.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlindex.h \
- /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlrecord.h \
- /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlquery.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlrecord.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlrelationaldelegate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlrelationaltablemodel.h \
@@ -729,6 +737,4 @@ CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqltablemodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlversion.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery \
- /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlError \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug

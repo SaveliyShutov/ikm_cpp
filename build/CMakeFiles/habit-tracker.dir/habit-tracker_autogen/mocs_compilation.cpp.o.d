@@ -730,14 +730,29 @@ CMakeFiles/habit-tracker.dir/habit-tracker_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqltablemodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlversion.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+ /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/moc_HabitRepository.cpp \
+ /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/../../../src/HabitRepository.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlError \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlRecord \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariantMap \
+ /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/../../../src/HabitEntity.h \
  /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/moc_HabitsModel.cpp \
  /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/../../../src/HabitsModel.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/../../../src/SqlQueryModel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQueryModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QHash \
+ /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/moc_LogRepository.cpp \
+ /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/../../../src/LogRepository.h \
+ /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/../../../src/LogEntity.h \
  /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/moc_LogsModel.cpp \
  /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/../../../src/LogsModel.h \
  /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/moc_SqlQueryModel.cpp \
+ /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/moc_UserRepository.cpp \
+ /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/../../../src/UserRepository.h \
+ /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/../../../src/UserEntity.h \
  /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/moc_UsersModel.cpp \
  /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/../../../src/UsersModel.h

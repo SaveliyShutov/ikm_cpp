@@ -769,5 +769,17 @@ CMakeFiles/habit-tracker.dir/src/main.cpp.o: \
  /home/saveliy/ikm_cpp/src/SqlQueryModel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQueryModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QHash \
+ /home/saveliy/ikm_cpp/src/HabitRepository.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlError \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlRecord \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariantMap \
+ /home/saveliy/ikm_cpp/src/HabitEntity.h \
  /home/saveliy/ikm_cpp/src/LogsModel.h \
- /home/saveliy/ikm_cpp/src/UsersModel.h
+ /home/saveliy/ikm_cpp/src/LogRepository.h \
+ /home/saveliy/ikm_cpp/src/LogEntity.h \
+ /home/saveliy/ikm_cpp/src/UsersModel.h \
+ /home/saveliy/ikm_cpp/src/UserRepository.h \
+ /home/saveliy/ikm_cpp/src/UserEntity.h

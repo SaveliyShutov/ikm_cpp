@@ -8,12 +8,21 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
   habit-tracker_autogen/moc_predefs.h \
   /home/saveliy/ikm_cpp/src/DatabaseManager.cpp \
   /home/saveliy/ikm_cpp/src/DatabaseManager.h \
+  /home/saveliy/ikm_cpp/src/HabitEntity.h \
+  /home/saveliy/ikm_cpp/src/HabitRepository.cpp \
+  /home/saveliy/ikm_cpp/src/HabitRepository.h \
   /home/saveliy/ikm_cpp/src/HabitsModel.cpp \
   /home/saveliy/ikm_cpp/src/HabitsModel.h \
+  /home/saveliy/ikm_cpp/src/LogEntity.h \
+  /home/saveliy/ikm_cpp/src/LogRepository.cpp \
+  /home/saveliy/ikm_cpp/src/LogRepository.h \
   /home/saveliy/ikm_cpp/src/LogsModel.cpp \
   /home/saveliy/ikm_cpp/src/LogsModel.h \
   /home/saveliy/ikm_cpp/src/SqlQueryModel.cpp \
   /home/saveliy/ikm_cpp/src/SqlQueryModel.h \
+  /home/saveliy/ikm_cpp/src/UserEntity.h \
+  /home/saveliy/ikm_cpp/src/UserRepository.cpp \
+  /home/saveliy/ikm_cpp/src/UserRepository.h \
   /home/saveliy/ikm_cpp/src/UsersModel.cpp \
   /home/saveliy/ikm_cpp/src/UsersModel.h \
   /home/saveliy/ikm_cpp/src/main.cpp \
@@ -333,6 +342,7 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariantMap \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCoreDepends \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
@@ -557,7 +567,11 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qwineventnotifier.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxmlstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxpfunctional.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlError \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery \
   /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQueryModel \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlRecord \
   /usr/include/x86_64-linux-gnu/qt6/QtSql/QtSql \
   /usr/include/x86_64-linux-gnu/qt6/QtSql/QtSqlDepends \
   /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
@@ -997,8 +1011,6 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 
 /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake:
 
-/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:
-
 /usr/share/cmake-3.28/Modules/FeatureSummary.cmake:
 
 /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
@@ -1028,8 +1040,6 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake:
 
 /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake:
 
 /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake:
 
@@ -1074,8 +1084,6 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QuickControls2/Qt6QuickControls2Config.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Quick/Qt6QuickTargets.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Quick/Qt6QuickTargets-none.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Quick/Qt6QuickConfig.cmake:
 
@@ -1264,10 +1272,6 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTestHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
-
-/usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicAppleHelpers.cmake:
 
@@ -1479,6 +1483,12 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQueryModel:
 
+/usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlError:
+
+/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QuickControls2/Qt6QuickControls2Targets-none.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Quick/Qt6QuickDependencies.cmake:
@@ -1505,13 +1515,15 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcborstreamreader.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtranslator.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bwintrin.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h:
 
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QmlConfig.cmake:
 
@@ -1528,18 +1540,6 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qpropertyanimation.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QTcpServerConnectionFactoryPluginAdditionalTargetInfo.cmake:
-
-/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlDependencies.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h:
 
 /usr/include/x86_64-linux-gnu/asm/unistd.h:
 
@@ -1569,11 +1569,7 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 
 /usr/include/wctype.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
-
 /usr/include/pthread.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/stdint.h:
 
@@ -1585,13 +1581,11 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 
 /usr/include/c++/13/ratio:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QQmlDebugServerFactoryPluginAdditionalTargetInfo.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
 /home/saveliy/ikm_cpp/src/UsersModel.h:
 
 /usr/include/c++/13/future:
+
+/usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlRecord:
 
 /usr/include/c++/13/bits/atomic_wait.h:
 
@@ -1665,19 +1659,11 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h:
 
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qassociativeiterable.h:
 
 /usr/include/strings.h:
 
 /usr/include/c++/13/exception:
-
-/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qnumeric.h:
 
 /home/saveliy/ikm_cpp/src/SqlQueryModel.cpp:
 
@@ -1694,10 +1680,6 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 /usr/lib/gcc/x86_64-linux-gnu/13/include/adxintrin.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmutex.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/c++/13/climits:
 
 /usr/include/c++/13/iterator:
 
@@ -1731,13 +1713,7 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 
 /home/saveliy/ikm_cpp/src/DatabaseManager.cpp:
 
-/usr/include/c++/13/bits/utility.h:
-
 /usr/include/locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/c++/13/bits/stl_pair.h:
 
 /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake:
 
@@ -1774,6 +1750,10 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 /usr/include/c++/13/cmath:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h:
+
+/usr/include/c++/13/climits:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlModels/Qt6QmlModelsDependencies.cmake:
 
@@ -1825,27 +1805,39 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake:
-
-/usr/include/errno.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Targets.cmake:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qmimetype.h:
-
-/usr/include/c++/13/bits/fs_dir.h:
+/usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/c++/13/bits/locale_facets_nonio.h:
 
-/usr/include/x86_64-linux-gnu/bits/confname.h:
+/usr/include/x86_64-linux-gnu/qt6/QtSql/QtSql:
+
+/usr/include/c++/13/ostream:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Dependencies.cmake:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/include/c++/13/bits/stl_tree.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qproperty.h:
+
+/usr/include/c++/13/bits/stl_relops.h:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h:
 
 /usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/c++/13/typeinfo:
 
@@ -1863,16 +1855,6 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 
 /usr/include/c++/13/bits/exception.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtSql/QtSql:
-
-/usr/include/c++/13/ostream:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Dependencies.cmake:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
 /usr/include/c++/13/bits/chrono.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
@@ -1883,21 +1865,55 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 
 /usr/include/c++/13/atomic:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtimeline.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qjnitypes.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
 
 /usr/include/c++/13/pstl/execution_defs.h:
 
 /usr/include/c++/13/bits/basic_ios.tcc:
 
-/usr/include/c++/13/array:
+/usr/include/c++/13/bits/unique_ptr.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers.cmake:
 
-/usr/include/c++/13/bits/hash_bytes.h:
+/usr/include/c++/13/bits/align.h:
 
-/usr/include/c++/13/backward/auto_ptr.h:
+/usr/include/c++/13/bits/concept_check.h:
 
-/usr/include/assert.h:
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QLocalClientConnectionFactoryPluginTargets.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h:
+
+/usr/include/c++/13/algorithm:
+
+/usr/include/c++/13/bits/streambuf.tcc:
+
+/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qnumeric.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake:
+
+/home/saveliy/ikm_cpp/src/HabitEntity.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake:
+
+/usr/include/c++/13/bits/node_handle.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
@@ -1906,6 +1922,14 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtemporaryfile.h:
+
+/usr/include/c++/13/bit:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h:
 
 /usr/include/alloca.h:
 
@@ -1923,17 +1947,17 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 
 /home/saveliy/ikm_cpp/src/main.cpp:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6QmlModels/Qt6QmlModelsVersionlessTargets.cmake:
-
-/usr/include/c++/13/bits/exception_defines.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtransposeproxymodel.h:
-
 /usr/include/c++/13/bits/stringfwd.h:
 
 /usr/include/c++/13/cerrno:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avxvnniint8intrin.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qvarianthash.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtsan_impl.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qjniobject.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qwaitcondition.h:
 
@@ -1941,7 +1965,15 @@ habit-tracker_autogen/timestamp: /home/saveliy/ikm_cpp/CMakeLists.txt \
 
 /usr/include/c++/13/tr1/legendre_function.tcc:
 
-/usr/include/c++/13/bits/streambuf.tcc:
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake:
+
+/home/saveliy/ikm_cpp/src/HabitsModel.h:
 
 /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake:
 
@@ -1959,6 +1991,10 @@ habit-tracker_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsequentialiterable.h:
 
+/usr/include/c++/13/bits/max_size_type.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractanimation.h:
+
 /usr/include/c++/13/debug/assertions.h:
 
 /usr/include/c++/13/debug/debug.h:
@@ -1969,35 +2005,47 @@ habit-tracker_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h:
 
-/usr/include/c++/13/bits/c++0x_warning.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qmimetype.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fintrin.h:
+/usr/include/c++/13/bits/stl_pair.h:
 
-CMakeFiles/3.28.3/CMakeSystem.cmake:
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake:
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/home/saveliy/ikm_cpp/src/HabitsModel.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
 
-/usr/include/c++/13/bits/fs_ops.h:
+/usr/include/c++/13/bits/fs_path.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
+/usr/include/c++/13/backward/binders.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512dqintrin.h:
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qforeach.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtransposeproxymodel.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake:
 
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QTcpServerConnectionFactoryPluginAdditionalTargetInfo.cmake:
 
-/usr/include/c++/13/bits/ranges_util.h:
+/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlDependencies.cmake:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qresultstore.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h:
+
+/usr/include/c++/13/bits/uses_allocator_args.h:
+
+/usr/include/c++/13/variant:
+
+/home/saveliy/ikm_cpp/src/LogRepository.h:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/c++/13/bits/stl_uninitialized.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fp16intrin.h:
 
@@ -2007,95 +2055,107 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/bits/mofunc_impl.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h:
-
-/usr/include/c++/13/algorithm:
-
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h:
-
-/usr/include/c++/13/bits/unique_ptr.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers.cmake:
-
-/usr/include/c++/13/bits/align.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qlockfile.h:
-
-/usr/include/c++/13/bits/ranges_cmp.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qsimd.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
 
 /usr/include/c++/13/bits/predefined_ops.h:
 
+/usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
+
+/home/saveliy/ikm_cpp/src/UserEntity.h:
+
+/usr/include/c++/13/bits/ranges_cmp.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsimd.h:
+
+/usr/include/c++/13/bits/c++0x_warning.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qqueue.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/c++/13/array:
+
+/usr/include/c++/13/bits/ranges_util.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qresultstore.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fintrin.h:
+
+CMakeFiles/3.28.3/CMakeSystem.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfig.cmake:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/tbmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/pkuintrin.h:
+
+/usr/include/c++/13/numeric:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/home/saveliy/ikm_cpp/src/HabitRepository.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
+
+/usr/include/assert.h:
+
+/home/saveliy/ikm_cpp/src/LogRepository.cpp:
+
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake:
+
+/usr/include/c++/13/bits/stream_iterator.h:
+
+/home/saveliy/ikm_cpp/src/UsersModel.cpp:
+
+/home/saveliy/ikm_cpp/src/UserRepository.cpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/bin/cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6QmlModels/Qt6QmlModelsVersionlessTargets.cmake:
 
-/usr/include/c++/13/bits/node_handle.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/c++/13/bits/concept_check.h:
-
-/usr/include/c++/13/bits/alloc_traits.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QLocalClientConnectionFactoryPluginTargets.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/c++/13/bits/stl_tree.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qproperty.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
-
-/usr/include/c++/13/bits/fs_path.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h:
-
-/usr/include/c++/13/bit:
-
-/usr/include/c++/13/bits/allocated_ptr.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+/usr/include/c++/13/bits/exception_defines.h:
 
 /usr/include/c++/13/bits/exception_ptr.h:
 
-/usr/include/c++/13/bits/stl_multimap.h:
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+/usr/include/c++/13/bits/fs_dir.h:
 
-/usr/include/c++/13/backward/binders.h:
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake:
+/usr/include/c++/13/bits/fs_ops.h:
 
-/home/saveliy/ikm_cpp/src/UsersModel.cpp:
+/usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
 
-/usr/include/c++/13/bits/stream_iterator.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512dqintrin.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qqueue.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qforeach.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake:
+
+/usr/include/errno.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Targets.cmake:
+
+/usr/include/c++/13/bits/functional_hash.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
@@ -2131,6 +2191,14 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/utility:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickControls2/Qt6QuickControls2AdditionalTargetInfo.cmake:
+
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/usr/include/syscall.h:
+
+/usr/include/c++/13/bits/stl_heap.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QQmlPreviewServiceFactoryPluginAdditionalTargetInfo.cmake:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512cdintrin.h:
@@ -2153,21 +2221,17 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/bits/move.h:
 
+/usr/include/c++/13/bits/utility.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
 /usr/include/c++/13/bits/stl_function.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfig.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsavefile.h:
-
-/usr/include/c++/13/bits/uses_allocator_args.h:
-
-/usr/include/c++/13/variant:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/c++/13/bits/stl_uninitialized.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h:
 
@@ -2186,6 +2250,16 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:
 
 /usr/include/c++/13/bits/quoted_string.h:
+
+/home/saveliy/ikm_cpp/src/HabitRepository.cpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h:
+
+/usr/include/c++/13/bits/stl_construct.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h:
+
+/usr/include/c++/13/bits/std_mutex.h:
 
 /usr/include/c++/13/system_error:
 
@@ -2229,11 +2303,17 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/cstdint:
 
+/home/saveliy/ikm_cpp/src/UserRepository.h:
+
 /usr/include/c++/13/cstddef:
 
 /usr/include/c++/13/bits/stl_algo.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Quick/Qt6QuickTargets-none.cmake:
+
+/home/saveliy/ikm_cpp/src/LogEntity.h:
 
 /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
 
@@ -2241,39 +2321,9 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsequentialanimationgroup.h:
 
-/usr/include/c++/13/bits/std_mutex.h:
-
-/usr/include/c++/13/bits/stl_construct.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h:
-
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/13/bits/functexcept.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickControls2/Qt6QuickControls2AdditionalTargetInfo.cmake:
-
-/usr/include/c++/13/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/13/bits/stl_heap.h:
-
-/usr/include/syscall.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfig.cmake:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/tbmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/pkuintrin.h:
-
-/usr/include/c++/13/numeric:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
-
-/usr/include/unistd.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Quick/Qt6QuickVersionlessTargets.cmake:
 
@@ -2281,17 +2331,31 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
+/usr/include/c++/13/bits/stl_map.h:
+
 /usr/include/c++/13/locale:
 
-/usr/include/c++/13/bits/stl_map.h:
+/usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h:
 
 /usr/include/c++/13/bits/stl_numeric.h:
 
-/usr/include/c++/13/bits/stl_relops.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bwintrin.h:
 
-/usr/include/c++/13/bits/max_size_type.h:
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractanimation.h:
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcborstreamreader.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QQmlDebugServerFactoryPluginAdditionalTargetInfo.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -2333,6 +2397,12 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QQmlProfilerServiceFactoryPluginConfig.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcache.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qresource.h:
 
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
@@ -2340,14 +2410,6 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 /usr/include/c++/13/ext/type_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QQmlProfilerServiceFactoryPluginConfig.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcache.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlTools/Qt6QmlToolsDependencies.cmake:
 
@@ -2467,8 +2529,6 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtranslator.h:
-
 /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
@@ -2538,6 +2598,8 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qurlquery.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QVariantMap:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectcleanuphandler.h:
 
@@ -2654,6 +2716,8 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompilerdetection.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h:
 
@@ -2833,8 +2897,6 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h:
-
 /usr/include/c++/13/list:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h:
@@ -2898,23 +2960,3 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /home/saveliy/ikm_cpp/src/HabitsModel.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qthreadpool.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qjnitypes.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtimeline.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avxvnniint8intrin.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qvarianthash.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qjniobject.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtsan_impl.h:

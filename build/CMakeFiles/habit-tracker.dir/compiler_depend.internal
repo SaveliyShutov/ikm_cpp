@@ -9,12 +9,21 @@
  /home/saveliy/ikm_cpp/build/habit-tracker_autogen/moc_predefs.h
  /home/saveliy/ikm_cpp/src/DatabaseManager.cpp
  /home/saveliy/ikm_cpp/src/DatabaseManager.h
+ /home/saveliy/ikm_cpp/src/HabitEntity.h
+ /home/saveliy/ikm_cpp/src/HabitRepository.cpp
+ /home/saveliy/ikm_cpp/src/HabitRepository.h
  /home/saveliy/ikm_cpp/src/HabitsModel.cpp
  /home/saveliy/ikm_cpp/src/HabitsModel.h
+ /home/saveliy/ikm_cpp/src/LogEntity.h
+ /home/saveliy/ikm_cpp/src/LogRepository.cpp
+ /home/saveliy/ikm_cpp/src/LogRepository.h
  /home/saveliy/ikm_cpp/src/LogsModel.cpp
  /home/saveliy/ikm_cpp/src/LogsModel.h
  /home/saveliy/ikm_cpp/src/SqlQueryModel.cpp
  /home/saveliy/ikm_cpp/src/SqlQueryModel.h
+ /home/saveliy/ikm_cpp/src/UserEntity.h
+ /home/saveliy/ikm_cpp/src/UserRepository.cpp
+ /home/saveliy/ikm_cpp/src/UserRepository.h
  /home/saveliy/ikm_cpp/src/UsersModel.cpp
  /home/saveliy/ikm_cpp/src/UsersModel.h
  /home/saveliy/ikm_cpp/src/main.cpp
@@ -334,6 +343,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariantMap
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCoreDepends
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h
@@ -558,7 +568,11 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qwineventnotifier.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qxmlstream.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qxpfunctional.h
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlError
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery
  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQueryModel
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlRecord
  /usr/include/x86_64-linux-gnu/qt6/QtSql/QtSql
  /usr/include/x86_64-linux-gnu/qt6/QtSql/QtSqlDepends
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h

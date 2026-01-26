@@ -161,10 +161,24 @@ CMakeFiles/habit-tracker.dir/src/DatabaseManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/habit-tracker.dir/src/DatabaseManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/saveliy/ikm_cpp/src/DatabaseManager.cpp -o CMakeFiles/habit-tracker.dir/src/DatabaseManager.cpp.s
 
+CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
+CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.o: /home/saveliy/ikm_cpp/src/HabitRepository.cpp
+CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.o -MF CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.o.d -o CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.o -c /home/saveliy/ikm_cpp/src/HabitRepository.cpp
+
+CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/saveliy/ikm_cpp/src/HabitRepository.cpp > CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.i
+
+CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/saveliy/ikm_cpp/src/HabitRepository.cpp -o CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.s
+
 CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
 CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o: /home/saveliy/ikm_cpp/src/HabitsModel.cpp
 CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o -MF CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o.d -o CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o -c /home/saveliy/ikm_cpp/src/HabitsModel.cpp
 
 CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.i: cmake_force
@@ -175,10 +189,24 @@ CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/saveliy/ikm_cpp/src/HabitsModel.cpp -o CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.s
 
+CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
+CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.o: /home/saveliy/ikm_cpp/src/LogRepository.cpp
+CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.o -MF CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.o.d -o CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.o -c /home/saveliy/ikm_cpp/src/LogRepository.cpp
+
+CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/saveliy/ikm_cpp/src/LogRepository.cpp > CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.i
+
+CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/saveliy/ikm_cpp/src/LogRepository.cpp -o CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.s
+
 CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
 CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.o: /home/saveliy/ikm_cpp/src/LogsModel.cpp
 CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.o -MF CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.o.d -o CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.o -c /home/saveliy/ikm_cpp/src/LogsModel.cpp
 
 CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.i: cmake_force
@@ -192,7 +220,7 @@ CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.s: cmake_force
 CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
 CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.o: /home/saveliy/ikm_cpp/src/SqlQueryModel.cpp
 CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.o -MF CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.o.d -o CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.o -c /home/saveliy/ikm_cpp/src/SqlQueryModel.cpp
 
 CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.i: cmake_force
@@ -203,10 +231,24 @@ CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/saveliy/ikm_cpp/src/SqlQueryModel.cpp -o CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.s
 
+CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
+CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.o: /home/saveliy/ikm_cpp/src/UserRepository.cpp
+CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.o -MF CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.o.d -o CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.o -c /home/saveliy/ikm_cpp/src/UserRepository.cpp
+
+CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/saveliy/ikm_cpp/src/UserRepository.cpp > CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.i
+
+CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/saveliy/ikm_cpp/src/UserRepository.cpp -o CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.s
+
 CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
 CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.o: /home/saveliy/ikm_cpp/src/UsersModel.cpp
 CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.o -MF CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.o.d -o CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.o -c /home/saveliy/ikm_cpp/src/UsersModel.cpp
 
 CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.i: cmake_force
@@ -220,7 +262,7 @@ CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.s: cmake_force
 CMakeFiles/habit-tracker.dir/src/main.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
 CMakeFiles/habit-tracker.dir/src/main.cpp.o: /home/saveliy/ikm_cpp/src/main.cpp
 CMakeFiles/habit-tracker.dir/src/main.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/habit-tracker.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/habit-tracker.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/src/main.cpp.o -MF CMakeFiles/habit-tracker.dir/src/main.cpp.o.d -o CMakeFiles/habit-tracker.dir/src/main.cpp.o -c /home/saveliy/ikm_cpp/src/main.cpp
 
 CMakeFiles/habit-tracker.dir/src/main.cpp.i: cmake_force
@@ -234,7 +276,7 @@ CMakeFiles/habit-tracker.dir/src/main.cpp.s: cmake_force
 CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
 CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.o: habit-tracker_qmltyperegistrations.cpp
 CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.o -MF CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.o.d -o CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.o -c /home/saveliy/ikm_cpp/build/habit-tracker_qmltyperegistrations.cpp
 
 CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.i: cmake_force
@@ -248,7 +290,7 @@ CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.s: cmake_for
 CMakeFiles/habit-tracker.dir/build/.rcc/qrc_qmake_HabitTracker.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
 CMakeFiles/habit-tracker.dir/build/.rcc/qrc_qmake_HabitTracker.cpp.o: .rcc/qrc_qmake_HabitTracker.cpp
 CMakeFiles/habit-tracker.dir/build/.rcc/qrc_qmake_HabitTracker.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/habit-tracker.dir/build/.rcc/qrc_qmake_HabitTracker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/habit-tracker.dir/build/.rcc/qrc_qmake_HabitTracker.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/build/.rcc/qrc_qmake_HabitTracker.cpp.o -MF CMakeFiles/habit-tracker.dir/build/.rcc/qrc_qmake_HabitTracker.cpp.o.d -o CMakeFiles/habit-tracker.dir/build/.rcc/qrc_qmake_HabitTracker.cpp.o -c /home/saveliy/ikm_cpp/build/.rcc/qrc_qmake_HabitTracker.cpp
 
 CMakeFiles/habit-tracker.dir/build/.rcc/qrc_qmake_HabitTracker.cpp.i: cmake_force
@@ -262,7 +304,7 @@ CMakeFiles/habit-tracker.dir/build/.rcc/qrc_qmake_HabitTracker.cpp.s: cmake_forc
 CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qmlcache_loader.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
 CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qmlcache_loader.cpp.o: .rcc/qmlcache/habit-tracker_qmlcache_loader.cpp
 CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qmlcache_loader.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qmlcache_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qmlcache_loader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qmlcache_loader.cpp.o -MF CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qmlcache_loader.cpp.o.d -o CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qmlcache_loader.cpp.o -c /home/saveliy/ikm_cpp/build/.rcc/qmlcache/habit-tracker_qmlcache_loader.cpp
 
 CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qmlcache_loader.cpp.i: cmake_force
@@ -276,7 +318,7 @@ CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qmlcache_loader.c
 CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qml/main_qml.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
 CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qml/main_qml.cpp.o: .rcc/qmlcache/habit-tracker_qml/main_qml.cpp
 CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qml/main_qml.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qml/main_qml.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qml/main_qml.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qml/main_qml.cpp.o -MF CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qml/main_qml.cpp.o.d -o CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qml/main_qml.cpp.o -c /home/saveliy/ikm_cpp/build/.rcc/qmlcache/habit-tracker_qml/main_qml.cpp
 
 CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qml/main_qml.cpp.i: cmake_force
@@ -290,7 +332,7 @@ CMakeFiles/habit-tracker.dir/build/.rcc/qmlcache/habit-tracker_qml/main_qml.cpp.
 CMakeFiles/habit-tracker.dir/build/.rcc/qrc_habit-tracker_raw_qml_0.cpp.o: CMakeFiles/habit-tracker.dir/flags.make
 CMakeFiles/habit-tracker.dir/build/.rcc/qrc_habit-tracker_raw_qml_0.cpp.o: .rcc/qrc_habit-tracker_raw_qml_0.cpp
 CMakeFiles/habit-tracker.dir/build/.rcc/qrc_habit-tracker_raw_qml_0.cpp.o: CMakeFiles/habit-tracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/habit-tracker.dir/build/.rcc/qrc_habit-tracker_raw_qml_0.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/habit-tracker.dir/build/.rcc/qrc_habit-tracker_raw_qml_0.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/habit-tracker.dir/build/.rcc/qrc_habit-tracker_raw_qml_0.cpp.o -MF CMakeFiles/habit-tracker.dir/build/.rcc/qrc_habit-tracker_raw_qml_0.cpp.o.d -o CMakeFiles/habit-tracker.dir/build/.rcc/qrc_habit-tracker_raw_qml_0.cpp.o -c /home/saveliy/ikm_cpp/build/.rcc/qrc_habit-tracker_raw_qml_0.cpp
 
 CMakeFiles/habit-tracker.dir/build/.rcc/qrc_habit-tracker_raw_qml_0.cpp.i: cmake_force
@@ -305,9 +347,12 @@ CMakeFiles/habit-tracker.dir/build/.rcc/qrc_habit-tracker_raw_qml_0.cpp.s: cmake
 habit__tracker_OBJECTS = \
 "CMakeFiles/habit-tracker.dir/habit-tracker_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/habit-tracker.dir/src/DatabaseManager.cpp.o" \
+"CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.o" \
 "CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o" \
+"CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.o" \
 "CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.o" \
 "CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.o" \
+"CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.o" \
 "CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.o" \
 "CMakeFiles/habit-tracker.dir/src/main.cpp.o" \
 "CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.o" \
@@ -321,9 +366,12 @@ habit__tracker_EXTERNAL_OBJECTS =
 
 habit-tracker: CMakeFiles/habit-tracker.dir/habit-tracker_autogen/mocs_compilation.cpp.o
 habit-tracker: CMakeFiles/habit-tracker.dir/src/DatabaseManager.cpp.o
+habit-tracker: CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.o
 habit-tracker: CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o
+habit-tracker: CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.o
 habit-tracker: CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.o
 habit-tracker: CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.o
+habit-tracker: CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.o
 habit-tracker: CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.o
 habit-tracker: CMakeFiles/habit-tracker.dir/src/main.cpp.o
 habit-tracker: CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.o
@@ -344,7 +392,7 @@ habit-tracker: /usr/lib/x86_64-linux-gnu/libGLX.so
 habit-tracker: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 habit-tracker: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 habit-tracker: CMakeFiles/habit-tracker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable habit-tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/saveliy/ikm_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable habit-tracker"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/habit-tracker.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

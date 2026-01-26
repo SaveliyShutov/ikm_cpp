@@ -1,5 +1,7 @@
 /home/saveliy/ikm_cpp/build/habit-tracker_autogen/UVLADIE3JM/moc_LogsModel.cpp: /home/saveliy/ikm_cpp/src/LogsModel.h \
   /home/saveliy/ikm_cpp/build/habit-tracker_autogen/moc_predefs.h \
+  /home/saveliy/ikm_cpp/src/LogEntity.h \
+  /home/saveliy/ikm_cpp/src/LogRepository.h \
   /home/saveliy/ikm_cpp/src/SqlQueryModel.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -285,7 +287,12 @@
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QHash \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariantMap \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
@@ -363,11 +370,19 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlError \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery \
   /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQueryModel \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlRecord \
   /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlerror.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlquery.h \
   /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlquerymodel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlrecord.h \
   /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \

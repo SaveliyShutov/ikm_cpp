@@ -16,9 +16,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/saveliy/ikm_cpp/build/habit-tracker_autogen/mocs_compilation.cpp" "CMakeFiles/habit-tracker.dir/habit-tracker_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/habit-tracker.dir/habit-tracker_autogen/mocs_compilation.cpp.o.d"
   "/home/saveliy/ikm_cpp/build/habit-tracker_qmltyperegistrations.cpp" "CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.o" "gcc" "CMakeFiles/habit-tracker.dir/habit-tracker_qmltyperegistrations.cpp.o.d"
   "/home/saveliy/ikm_cpp/src/DatabaseManager.cpp" "CMakeFiles/habit-tracker.dir/src/DatabaseManager.cpp.o" "gcc" "CMakeFiles/habit-tracker.dir/src/DatabaseManager.cpp.o.d"
+  "/home/saveliy/ikm_cpp/src/HabitRepository.cpp" "CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.o" "gcc" "CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.o.d"
   "/home/saveliy/ikm_cpp/src/HabitsModel.cpp" "CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o" "gcc" "CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.o.d"
+  "/home/saveliy/ikm_cpp/src/LogRepository.cpp" "CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.o" "gcc" "CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.o.d"
   "/home/saveliy/ikm_cpp/src/LogsModel.cpp" "CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.o" "gcc" "CMakeFiles/habit-tracker.dir/src/LogsModel.cpp.o.d"
   "/home/saveliy/ikm_cpp/src/SqlQueryModel.cpp" "CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.o" "gcc" "CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.o.d"
+  "/home/saveliy/ikm_cpp/src/UserRepository.cpp" "CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.o" "gcc" "CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.o.d"
   "/home/saveliy/ikm_cpp/src/UsersModel.cpp" "CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.o" "gcc" "CMakeFiles/habit-tracker.dir/src/UsersModel.cpp.o.d"
   "/home/saveliy/ikm_cpp/src/main.cpp" "CMakeFiles/habit-tracker.dir/src/main.cpp.o" "gcc" "CMakeFiles/habit-tracker.dir/src/main.cpp.o.d"
   )

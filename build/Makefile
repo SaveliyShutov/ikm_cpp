@@ -440,6 +440,30 @@ src/DatabaseManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/habit-tracker.dir/build.make CMakeFiles/habit-tracker.dir/src/DatabaseManager.cpp.s
 .PHONY : src/DatabaseManager.cpp.s
 
+src/HabitRepository.o: src/HabitRepository.cpp.o
+.PHONY : src/HabitRepository.o
+
+# target to build an object file
+src/HabitRepository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/habit-tracker.dir/build.make CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.o
+.PHONY : src/HabitRepository.cpp.o
+
+src/HabitRepository.i: src/HabitRepository.cpp.i
+.PHONY : src/HabitRepository.i
+
+# target to preprocess a source file
+src/HabitRepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/habit-tracker.dir/build.make CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.i
+.PHONY : src/HabitRepository.cpp.i
+
+src/HabitRepository.s: src/HabitRepository.cpp.s
+.PHONY : src/HabitRepository.s
+
+# target to generate assembly for a file
+src/HabitRepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/habit-tracker.dir/build.make CMakeFiles/habit-tracker.dir/src/HabitRepository.cpp.s
+.PHONY : src/HabitRepository.cpp.s
+
 src/HabitsModel.o: src/HabitsModel.cpp.o
 .PHONY : src/HabitsModel.o
 
@@ -463,6 +487,30 @@ src/HabitsModel.s: src/HabitsModel.cpp.s
 src/HabitsModel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/habit-tracker.dir/build.make CMakeFiles/habit-tracker.dir/src/HabitsModel.cpp.s
 .PHONY : src/HabitsModel.cpp.s
+
+src/LogRepository.o: src/LogRepository.cpp.o
+.PHONY : src/LogRepository.o
+
+# target to build an object file
+src/LogRepository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/habit-tracker.dir/build.make CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.o
+.PHONY : src/LogRepository.cpp.o
+
+src/LogRepository.i: src/LogRepository.cpp.i
+.PHONY : src/LogRepository.i
+
+# target to preprocess a source file
+src/LogRepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/habit-tracker.dir/build.make CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.i
+.PHONY : src/LogRepository.cpp.i
+
+src/LogRepository.s: src/LogRepository.cpp.s
+.PHONY : src/LogRepository.s
+
+# target to generate assembly for a file
+src/LogRepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/habit-tracker.dir/build.make CMakeFiles/habit-tracker.dir/src/LogRepository.cpp.s
+.PHONY : src/LogRepository.cpp.s
 
 src/LogsModel.o: src/LogsModel.cpp.o
 .PHONY : src/LogsModel.o
@@ -511,6 +559,30 @@ src/SqlQueryModel.s: src/SqlQueryModel.cpp.s
 src/SqlQueryModel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/habit-tracker.dir/build.make CMakeFiles/habit-tracker.dir/src/SqlQueryModel.cpp.s
 .PHONY : src/SqlQueryModel.cpp.s
+
+src/UserRepository.o: src/UserRepository.cpp.o
+.PHONY : src/UserRepository.o
+
+# target to build an object file
+src/UserRepository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/habit-tracker.dir/build.make CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.o
+.PHONY : src/UserRepository.cpp.o
+
+src/UserRepository.i: src/UserRepository.cpp.i
+.PHONY : src/UserRepository.i
+
+# target to preprocess a source file
+src/UserRepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/habit-tracker.dir/build.make CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.i
+.PHONY : src/UserRepository.cpp.i
+
+src/UserRepository.s: src/UserRepository.cpp.s
+.PHONY : src/UserRepository.s
+
+# target to generate assembly for a file
+src/UserRepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/habit-tracker.dir/build.make CMakeFiles/habit-tracker.dir/src/UserRepository.cpp.s
+.PHONY : src/UserRepository.cpp.s
 
 src/UsersModel.o: src/UsersModel.cpp.o
 .PHONY : src/UsersModel.o
@@ -601,15 +673,24 @@ help:
 	@echo "... src/DatabaseManager.o"
 	@echo "... src/DatabaseManager.i"
 	@echo "... src/DatabaseManager.s"
+	@echo "... src/HabitRepository.o"
+	@echo "... src/HabitRepository.i"
+	@echo "... src/HabitRepository.s"
 	@echo "... src/HabitsModel.o"
 	@echo "... src/HabitsModel.i"
 	@echo "... src/HabitsModel.s"
+	@echo "... src/LogRepository.o"
+	@echo "... src/LogRepository.i"
+	@echo "... src/LogRepository.s"
 	@echo "... src/LogsModel.o"
 	@echo "... src/LogsModel.i"
 	@echo "... src/LogsModel.s"
 	@echo "... src/SqlQueryModel.o"
 	@echo "... src/SqlQueryModel.i"
 	@echo "... src/SqlQueryModel.s"
+	@echo "... src/UserRepository.o"
+	@echo "... src/UserRepository.i"
+	@echo "... src/UserRepository.s"
 	@echo "... src/UsersModel.o"
 	@echo "... src/UsersModel.i"
 	@echo "... src/UsersModel.s"

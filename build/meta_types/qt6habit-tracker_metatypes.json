@@ -19,6 +19,23 @@
     {
         "classes": [
             {
+                "className": "HabitRepository",
+                "object": true,
+                "qualifiedClassName": "HabitRepository",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "HabitRepository.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
                 "className": "HabitsModel",
                 "methods": [
                     {
@@ -70,7 +87,36 @@
                     }
                 ],
                 "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "lastError",
+                        "notify": "lastErrorChanged",
+                        "read": "lastError",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
                 "qualifiedClassName": "HabitsModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "error",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "lastErrorChanged",
+                        "returnType": "void"
+                    }
+                ],
                 "superClasses": [
                     {
                         "access": "public",
@@ -80,6 +126,23 @@
             }
         ],
         "inputFile": "HabitsModel.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "LogRepository",
+                "object": true,
+                "qualifiedClassName": "LogRepository",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "LogRepository.h",
         "outputRevision": 68
     },
     {
@@ -221,6 +284,23 @@
             }
         ],
         "inputFile": "SqlQueryModel.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "UserRepository",
+                "object": true,
+                "qualifiedClassName": "UserRepository",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "UserRepository.h",
         "outputRevision": 68
     },
     {

@@ -67,9 +67,9 @@ include CMakeFiles/habit-tracker_autogen_timestamp_deps.dir/compiler_depend.make
 include CMakeFiles/habit-tracker_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/habit-tracker_autogen_timestamp_deps: .rcc/qmlcache/habit-tracker_qmlcache_loader.cpp
-CMakeFiles/habit-tracker_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6QuickControls2.so.6.4.2
 CMakeFiles/habit-tracker_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 CMakeFiles/habit-tracker_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+CMakeFiles/habit-tracker_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6QuickControls2.so.6.4.2
 CMakeFiles/habit-tracker_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Quick.so.6.4.2
 
 .rcc/qmlcache/habit-tracker_qmlcache_loader.cpp: /usr/lib/qt6/libexec/qmlcachegen

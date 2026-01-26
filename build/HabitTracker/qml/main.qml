@@ -7,7 +7,7 @@ ApplicationWindow {
     visible: true
     width: 1000
     height: 700
-    title: "Habit Tracker — Qt Quick + Postgres"
+    title: "Трекер привычек"
 
     property Component errorTextFieldStyle: Component {
       TextField {
@@ -76,9 +76,9 @@ ApplicationWindow {
         TabBar {
             id: tabBar
             width: parent.width
-            TabButton { text: "Users" }
-            TabButton { text: "Habits" }
-            TabButton { text: "Logs" }
+            TabButton { text: "Пользователи" }
+            TabButton { text: "Привычки" }
+            TabButton { text: "Трекер" }
         }
 
         SwipeView {
@@ -97,7 +97,7 @@ ApplicationWindow {
                     Row {
                         spacing: 8
                         Button { 
-                            text: "Refresh"
+                            text: "Обновить"
                             onClicked: {
                                 UsersModel.refresh()
                                 usersColumn.reloadUsers()
@@ -105,18 +105,18 @@ ApplicationWindow {
                         }
                         Button {
                             id: addUserBtn
-                            text: "Add"
+                            text: "Добавить"
                             onClicked: {
                                 userForm.userId = ""
                                 userForm.userName = ""
                                 userForm.userEmail = ""
-                                userForm.userRole = "user"
+                                userForm.userRole = "пользователь"
                                 userDialog.open()
                             }
                         }
                         Button {
                             id: editUserBtn
-                            text: "Edit"
+                            text: "Изменить"
                             onClicked: {
                                 if (userListView.currentIndex >= 0) {
                                     var row = userListModel.get(userListView.currentIndex)
@@ -130,7 +130,7 @@ ApplicationWindow {
                         }
                         Button {
                             id: deleteUserBtn
-                            text: "Delete"
+                            text: "Удалить"
                             onClicked: {
                                 if (userListView.currentIndex >= 0) {
                                     var row = userListModel.get(userListView.currentIndex)
@@ -226,7 +226,7 @@ ApplicationWindow {
 
                     Dialog {
                         id: userDialog
-                        title: userForm.userId ? "Edit User" : "Add User"
+                        title: userForm.userId ? "Изменить пользователя" : "Добавить пользователя"
                         modal: true
                         standardButtons: Dialog.Ok | Dialog.Cancel
                         
@@ -237,14 +237,14 @@ ApplicationWindow {
                             TextField { 
                                 id: idField
                                 width: parent.width
-                                placeholderText: "UUID (optional)"
+                                placeholderText: "UUID (опционально)"
                                 text: userForm.userId
                                 visible: userForm.userId !== ""
                             }
                             TextField { 
                                 id: nameField
                                 width: parent.width
-                                placeholderText: "Name"
+                                placeholderText: "Имя"
                                 text: userForm.userName
                                 validator: RegularExpressionValidator {
                                   regularExpression: /.+/
@@ -260,7 +260,7 @@ ApplicationWindow {
                             TextField { 
                                 id: emailField
                                 width: parent.width
-                                placeholderText: "Email"
+                                placeholderText: "Почта"
                                 text: userForm.userEmail
                                 validator: RegularExpressionValidator {
                                   regularExpression: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
@@ -277,8 +277,8 @@ ApplicationWindow {
                             ComboBox { 
                                 id: roleField
                                 width: parent.width
-                                model: ["user","admin"]
-                                currentIndex: userForm.userRole === "admin" ? 1 : 0
+                                model: ["пользователь","админ"]
+                                currentIndex: userForm.userRole === "админ" ? 1 : 0
                             }
                         }
                         
@@ -286,7 +286,7 @@ ApplicationWindow {
                             idField.text = userForm.userId
                             nameField.text = userForm.userName
                             emailField.text = userForm.userEmail
-                            roleField.currentIndex = userForm.userRole === "admin" ? 1 : 0
+                            roleField.currentIndex = userForm.userRole === "админ" ? 1 : 0
                         }
                         
                         onAccepted: {
@@ -319,13 +319,13 @@ ApplicationWindow {
                             }
                             
                             if (userForm.userId === "") {
-                                console.log("Adding user:", payload)
+                                console.log("Добавляем пользоваеля:", payload)
                                 if (UsersModel.addUser(payload)) {
                                     UsersModel.refresh()
                                     Qt.callLater(usersColumn.reloadUsers)
                                 }
                             } else {
-                                console.log("Editing user:", userForm.userId, payload)
+                                console.log("Изменяем пользователя:", userForm.userId, payload)
                                 if (UsersModel.editUser(userForm.userId, payload)) {
                                     UsersModel.refresh()
                                     Qt.callLater(usersColumn.reloadUsers)
@@ -339,7 +339,7 @@ ApplicationWindow {
                         property string userId: ""
                         property string userName: ""
                         property string userEmail: ""
-                        property string userRole: "user"
+                        property string userRole: "пользователь"
                     }
                 }
             }
@@ -354,14 +354,14 @@ ApplicationWindow {
                     Row {
                         spacing: 8
                         Button { 
-                            text: "Refresh"
+                            text: "Обновить"
                             onClicked: {
                                 HabitsModel.refresh()
                                 habitsColumn.reloadHabits()
                             }
                         }
                         Button { 
-                            text: "Add"
+                            text: "Добавить"
                             onClicked: {
                                 habitForm.habitId = ""
                                 habitForm.name = ""
@@ -372,7 +372,7 @@ ApplicationWindow {
                             }
                         }
                         Button {
-                            text: "Edit"
+                            text: "Изменить"
                             onClicked: {
                                 if (habitListView.currentIndex >= 0) {
                                     var row = habitListModel.get(habitListView.currentIndex)
@@ -386,7 +386,7 @@ ApplicationWindow {
                             }
                         }
                         Button {
-                            text: "Delete"
+                            text: "Удалить"
                             onClicked: {
                                 if (habitListView.currentIndex >= 0) {
                                     var row = habitListModel.get(habitListView.currentIndex)
@@ -483,7 +483,7 @@ ApplicationWindow {
 
                     Dialog {
                         id: habitDialog
-                        title: habitForm.habitId ? "Edit Habit" : "Add Habit"
+                        title: habitForm.habitId ? "Изменить привычку" : "Добавить привычку"
                         modal: true
                         standardButtons: Dialog.Ok | Dialog.Cancel
                         
@@ -494,14 +494,14 @@ ApplicationWindow {
                             TextField { 
                                 id: hid
                                 width: parent.width
-                                placeholderText: "UUID (optional)"
+                                placeholderText: "UUID (опционально)"
                                 text: habitForm.habitId
                                 visible: habitForm.habitId !== ""
                             }
                             TextField { 
                                 id: hname
                                 width: parent.width
-                                placeholderText: "Name"
+                                placeholderText: "Имя"
                                 text: habitForm.name
                                   validator: RegularExpressionValidator {
                                   regularExpression: /.+/
@@ -518,7 +518,7 @@ ApplicationWindow {
                             TextField { 
                                 id: hcat
                                 width: parent.width
-                                placeholderText: "Category"
+                                placeholderText: "Категория"
                                 text: habitForm.category
                                 validator: RegularExpressionValidator {
                                   regularExpression: /.+/
@@ -535,7 +535,7 @@ ApplicationWindow {
                             TextField { 
                                 id: hfreq
                                 width: parent.width
-                                placeholderText: "Frequency"
+                                placeholderText: "Частота выполнения"
                                 text: habitForm.frequency
                                 validator: IntValidator {
                                     bottom: 1
@@ -554,7 +554,7 @@ ApplicationWindow {
                             TextArea { 
                                 id: hdesc
                                 width: parent.width
-                                placeholderText: "Description"
+                                placeholderText: "Описание"
                                 text: habitForm.description
                                 height: 80
                             }
@@ -643,26 +643,26 @@ ApplicationWindow {
         Row {
             spacing: 8
             Button { 
-                text: "Refresh"
+                text: "Обновить"
                 onClicked: {
                     LogsModel.refresh()
                     logsColumn.reloadLogs()
                 }
             }
             Button { 
-                text: "Add"
+                text: "Добавить"
                 onClicked: {
                     logForm.userId = ""
                     logForm.habitId = ""
                     logForm.logDate = new Date().toISOString().slice(0,10)
                     logForm.isCompleted = false
                     logForm.notes = ""
-                    logDialog.title = "Add Log"
+                    logDialog.title = "Добавить привычку"
                     logDialog.open()
                 }
             }
             Button {
-                text: "Edit"
+                text: "Изменить"
                 onClicked: {
                     if (logListView.currentIndex >= 0) {
                         var row = logListModel.get(logListView.currentIndex)
@@ -671,13 +671,13 @@ ApplicationWindow {
                         logForm.logDate = row.log_date
                         logForm.isCompleted = row.is_completed
                         logForm.notes = row.notes || ""
-                        logDialog.title = "Edit Log"
+                        logDialog.title = "Изменить привычку"
                         logDialog.open()
                     }
                 }
             }
             Button {
-                text: "Delete"
+                text: "Удалить"
                 onClicked: {
                     if (logListView.currentIndex >= 0) {
                         var row = logListModel.get(logListView.currentIndex)
@@ -712,11 +712,11 @@ ApplicationWindow {
                         
                         Text { 
                             text: log_date
-                            width: 120  // Увеличена ширина для даты
+                            width: 120  
                         }
                         Text { 
-                            text: is_completed ? "✓ Done" : "✗ Pending"
-                            width: 80
+                            text: is_completed ? "✓ готово" : "✗ Не готово"
+                            width: 200
                             color: is_completed ? "green" : "red"
                         }
                         Text { 
@@ -798,12 +798,12 @@ ApplicationWindow {
                 }
                 CheckBox { 
                     id: doneBox
-                    text: "Completed"
+                    text: "Выполнено"
                 }
                 TextArea { 
                     id: notesField
                     width: parent.width
-                    placeholderText: "Notes"
+                    placeholderText: "Описание"
                     height: 80
                 }
             }
@@ -875,14 +875,14 @@ ApplicationWindow {
                 
                 if (logForm.userId && logForm.habitId && logForm.logDate) {
                     // Edit existing log
-                    console.log("Editing log:", logForm.userId, logForm.habitId, logForm.logDate, payload)
+                    console.log("Изменяем отметку:", logForm.userId, logForm.habitId, logForm.logDate, payload)
                     if (LogsModel.editLog(logForm.userId, logForm.habitId, logForm.logDate, payload)) {
                         LogsModel.refresh()
                         Qt.callLater(logsColumn.reloadLogs)
                     }
                 } else {
                     // Add new log
-                    console.log("Adding log:", payload)
+                    console.log("Добавляем отметку:", payload)
                     if (LogsModel.addLog(payload)) {
                         LogsModel.refresh()
                         Qt.callLater(logsColumn.reloadLogs)

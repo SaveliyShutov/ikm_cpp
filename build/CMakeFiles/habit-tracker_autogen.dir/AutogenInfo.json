@@ -370,9 +370,33 @@
 			null
 		],
 		[
+			"/home/saveliy/ikm_cpp/src/HabitEntity.h",
+			"MU",
+			"UVLADIE3JM/moc_HabitEntity.cpp",
+			null
+		],
+		[
+			"/home/saveliy/ikm_cpp/src/HabitRepository.h",
+			"MU",
+			"UVLADIE3JM/moc_HabitRepository.cpp",
+			null
+		],
+		[
 			"/home/saveliy/ikm_cpp/src/HabitsModel.h",
 			"MU",
 			"UVLADIE3JM/moc_HabitsModel.cpp",
+			null
+		],
+		[
+			"/home/saveliy/ikm_cpp/src/LogEntity.h",
+			"MU",
+			"UVLADIE3JM/moc_LogEntity.cpp",
+			null
+		],
+		[
+			"/home/saveliy/ikm_cpp/src/LogRepository.h",
+			"MU",
+			"UVLADIE3JM/moc_LogRepository.cpp",
 			null
 		],
 		[
@@ -385,6 +409,18 @@
 			"/home/saveliy/ikm_cpp/src/SqlQueryModel.h",
 			"MU",
 			"UVLADIE3JM/moc_SqlQueryModel.cpp",
+			null
+		],
+		[
+			"/home/saveliy/ikm_cpp/src/UserEntity.h",
+			"MU",
+			"UVLADIE3JM/moc_UserEntity.cpp",
+			null
+		],
+		[
+			"/home/saveliy/ikm_cpp/src/UserRepository.h",
+			"MU",
+			"UVLADIE3JM/moc_UserRepository.cpp",
 			null
 		],
 		[
@@ -490,9 +526,12 @@
 			null
 		],
 		[ "/home/saveliy/ikm_cpp/src/DatabaseManager.cpp", "MU", null ],
+		[ "/home/saveliy/ikm_cpp/src/HabitRepository.cpp", "MU", null ],
 		[ "/home/saveliy/ikm_cpp/src/HabitsModel.cpp", "MU", null ],
+		[ "/home/saveliy/ikm_cpp/src/LogRepository.cpp", "MU", null ],
 		[ "/home/saveliy/ikm_cpp/src/LogsModel.cpp", "MU", null ],
 		[ "/home/saveliy/ikm_cpp/src/SqlQueryModel.cpp", "MU", null ],
+		[ "/home/saveliy/ikm_cpp/src/UserRepository.cpp", "MU", null ],
 		[ "/home/saveliy/ikm_cpp/src/UsersModel.cpp", "MU", null ],
 		[ "/home/saveliy/ikm_cpp/src/main.cpp", "MU", null ]
 	],

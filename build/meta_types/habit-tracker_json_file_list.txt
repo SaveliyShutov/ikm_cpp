@@ -1,5 +1,8 @@
 /home/saveliy/ikm_cpp/build/habit-tracker_autogen/include/../UVLADIE3JM/moc_DatabaseManager.cpp.json
+/home/saveliy/ikm_cpp/build/habit-tracker_autogen/include/../UVLADIE3JM/moc_HabitRepository.cpp.json
 /home/saveliy/ikm_cpp/build/habit-tracker_autogen/include/../UVLADIE3JM/moc_HabitsModel.cpp.json
+/home/saveliy/ikm_cpp/build/habit-tracker_autogen/include/../UVLADIE3JM/moc_LogRepository.cpp.json
 /home/saveliy/ikm_cpp/build/habit-tracker_autogen/include/../UVLADIE3JM/moc_LogsModel.cpp.json
 /home/saveliy/ikm_cpp/build/habit-tracker_autogen/include/../UVLADIE3JM/moc_SqlQueryModel.cpp.json
+/home/saveliy/ikm_cpp/build/habit-tracker_autogen/include/../UVLADIE3JM/moc_UserRepository.cpp.json
 /home/saveliy/ikm_cpp/build/habit-tracker_autogen/include/../UVLADIE3JM/moc_UsersModel.cpp.json
