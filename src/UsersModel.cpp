@@ -8,9 +8,7 @@ UsersModel::UsersModel(QObject* parent) : QObject(parent) {
     refresh();
 }
 
-UsersModel::~UsersModel() {
-    // Автоматически удалится благодаря родительству
-}
+UsersModel::~UsersModel() {}
 
 QVariant UsersModel::getModel() {
     return QVariant::fromValue(static_cast<QObject*>(m_model));

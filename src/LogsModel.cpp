@@ -8,9 +8,7 @@ LogsModel::LogsModel(QObject* parent) : QObject(parent) {
     refresh();
 }
 
-LogsModel::~LogsModel() {
-    // Автоматически удалится благодаря родительству
-}
+LogsModel::~LogsModel() {}
 
 QVariant LogsModel::getModel() {
     return QVariant::fromValue(static_cast<QObject*>(m_model));

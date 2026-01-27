@@ -8,9 +8,7 @@ HabitsModel::HabitsModel(QObject* parent) : QObject(parent) {
     refresh();
 }
 
-HabitsModel::~HabitsModel() {
-    // Автоматически удалится благодаря родительству
-}
+HabitsModel::~HabitsModel() {}
 
 QVariant HabitsModel::getModel() {
     return QVariant::fromValue(static_cast<QObject*>(m_model));
